@@ -1,6 +1,6 @@
 const div = document.querySelector(`div`)
 
-fetch(`https://fakestoreapi.com/products`)
+axios(`https://fakestoreapi.com/products`)
 .then((res)=>{
     console.log(res.data);
     res.data.map((item)=>{
